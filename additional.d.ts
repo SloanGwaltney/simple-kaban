@@ -4,6 +4,10 @@ namespace SimpleKanbanAPI {
 		error?: any,
 		data?: T
 	}
+	declare type APIValidationError = {
+		message: string,
+		path: string
+	}
 }
 
 declare module "iron-session" {
