@@ -12,7 +12,7 @@ const yupSchema = yup.object({
 	username: yup.string().required().min(3).max(32),
 	email: yup.string().required().email(),
 	password: yup.string().required().min(12).max(64)
-})
+}).required()
 
 async function handler(
   req: NextApiRequest,
